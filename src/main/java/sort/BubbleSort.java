@@ -1,16 +1,19 @@
 package sort;
 
 public class BubbleSort implements Sortable {
+    private int counter;
 
     @Override
     public int[] sort(int[] tab) {
         for (int i = 1; i < tab.length - 1; i++) {
             for (int j = 0; j < tab.length - i; j++) {
+                counter++;
                 if (tab[j] < tab[j + 1]) {
                     swap(tab, j);
                 }
             }
         }
+        System.out.println(step_count());
         return tab;
     }
 
@@ -23,6 +26,6 @@ public class BubbleSort implements Sortable {
 
     @Override
     public double step_count() {
-        return 0;
+        return counter;
     }
 }

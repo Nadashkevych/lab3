@@ -1,6 +1,6 @@
 package test;
 
-import sort.BucketSort;
+import sort.BubbleSort;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -14,10 +14,10 @@ public class SortTest {
             numbers[i] = rand.nextInt(500);
         }
 
-//        BubbleSort sort = new BubbleSort();
-//        System.out.println(Arrays.toString(sort.sort(numbers)));
+        BubbleSort sort = new BubbleSort();
+        System.out.println(Arrays.toString(sort.sort(numbers)));
 
-        BucketSort sort1 = new BucketSort();
-        System.out.println(Arrays.toString(sort1.sort(numbers)));
+//        BucketSort sort1 = new BucketSort();
+//        System.out.println(Arrays.toString(sort1.sort(numbers)));
     }
 }

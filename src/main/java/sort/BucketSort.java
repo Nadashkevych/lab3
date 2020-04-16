@@ -11,7 +11,6 @@ public class BucketSort implements Sortable {
         for (int i = 0; i < tab.length; i++) {
             bucket[tab[i]]++;
         }
-
         int position = 0;
         for (int i = 0; i < bucket.length; i++) {
             for (int j = 0; j < bucket[i]; j++) {
